@@ -1042,6 +1042,7 @@ exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
             <input
               checked=""
               class="ant-checkbox-input"
+              data-__meta="[object Object]"
               type="checkbox"
             />
             <span
@@ -1231,6 +1232,11 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
           class="ant-cascader-picker"
           tabindex="0"
         >
+          <span
+            class="ant-cascader-picker-label"
+          >
+            Zhejiang / Hangzhou / West Lake
+          </span>
           <input
             autocomplete="off"
             class="ant-input ant-cascader-input ant-input-lg"
@@ -1240,11 +1246,6 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
             type="text"
             value=""
           />
-          <span
-            class="ant-cascader-picker-label"
-          >
-            Zhejiang / Hangzhou / West Lake
-          </span>
           <i
             class="anticon anticon-cross-circle ant-cascader-picker-clear"
           />
@@ -1475,6 +1476,7 @@ exports[`renders ./components/form/demo/register.md correctly 1`] = `
           >
             <input
               class="ant-checkbox-input"
+              data-__meta="[object Object]"
               type="checkbox"
             />
             <span
