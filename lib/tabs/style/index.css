@@ -375,6 +375,7 @@
   opacity: 0;
   height: 0;
   padding: 0!important;
+  pointer-events: none;
 }
 .ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content-animated {
   display: -webkit-box;

@@ -13,9 +13,11 @@ export default class RangePicker extends React.Component<any, any> {
     constructor(props: any);
     componentWillReceiveProps(nextProps: any): void;
     clearSelection: (e: any) => void;
+    clearHoverValue: () => void;
     handleChange: (value: moment.Moment[]) => void;
     handleOpenChange: (open: any) => void;
     handleShowDateChange: (showDate: any) => void;
+    handleHoverChange: (hoverValue: any) => void;
     setValue(value: any): void;
     renderFooter: () => JSX.Element | null;
     render(): JSX.Element;

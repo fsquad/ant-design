@@ -188,7 +188,7 @@
 }
 .ant-tree li .ant-tree-node-content-wrapper {
   display: inline-block;
-  padding: 1px 5px;
+  padding: 3px 5px;
   border-radius: 2px;
   margin: 0;
   cursor: pointer;
@@ -210,14 +210,15 @@
 .ant-tree li span.ant-tree-switcher,
 .ant-tree li span.ant-tree-iconEle {
   margin: 0;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   display: inline-block;
   vertical-align: middle;
   border: 0 none;
   cursor: pointer;
   outline: none;
+  text-align: center;
 }
 .ant-tree li span.ant-tree-icon_loading:after {
   display: inline-block;
@@ -468,6 +469,6 @@
   border-left: 1px solid #d9d9d9;
   height: 100%;
   position: absolute;
-  left: 6px;
+  left: 12px;
   margin: 18px 0;
 }

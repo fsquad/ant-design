@@ -19,6 +19,7 @@ export interface FilterMenuProps {
     confirmFilter: (column: Object, selectedKeys: string[]) => any;
     prefixCls: string;
     dropdownPrefixCls: string;
+    getPopupContainer: (triggerNode?: Element) => HTMLElement;
 }
 export default class FilterMenu extends React.Component<FilterMenuProps, any> {
     static defaultProps: {

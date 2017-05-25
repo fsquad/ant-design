@@ -121,6 +121,7 @@ export default class Table<T> extends React.Component<TableProps<T>, any> {
     handlePageChange: (current: any, ...otherArguments: any[]) => void;
     renderSelectionBox: (type: any) => (_: any, record: any, index: any) => JSX.Element;
     getRecordKey: (record: any, index: any) => string;
+    getPopupContainer: () => HTMLElement;
     renderRowSelection(): ColumnProps<T>[];
     getColumnKey(column: any, index?: any): any;
     getMaxCurrent(total: any): any;

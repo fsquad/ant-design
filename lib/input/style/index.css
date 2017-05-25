@@ -546,5 +546,5 @@ textarea.ant-input {
   padding-right: 24px;
 }
 .ant-input-affix-wrapper .ant-input {
-  height: 100%;
+  min-height: 100%;
 }

@@ -16,6 +16,7 @@ export interface SelectionCheckboxAllProps {
     prefixCls: string | undefined;
     onSelect: (key: string, index: number, selectFunc: any) => void;
     selections?: SelectionDecorator[] | boolean;
+    getPopupContainer: (triggerNode?: Element) => HTMLElement;
 }
 export default class SelectionCheckboxAll extends React.Component<SelectionCheckboxAllProps, any> {
     unsubscribe: () => void;

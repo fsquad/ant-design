@@ -9,6 +9,7 @@ export default class Radio extends React.Component<RadioProps, any> {
     static Button: typeof RadioButton;
     static defaultProps: {
         prefixCls: string;
+        type: string;
     };
     static contextTypes: {
         radioGroup: any;

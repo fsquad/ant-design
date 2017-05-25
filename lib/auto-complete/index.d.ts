@@ -16,7 +16,6 @@ export interface AutoCompleteProps extends AbstractSelectProps {
     defaultValue?: SelectValue;
     dataSource: DataSourceItemType[];
     optionLabelProp?: string;
-    filterOption?: boolean | ((inputValue: string, option: Object) => any);
     onChange?: (value: SelectValue) => void;
     onSelect?: (value: SelectValue, option: Object) => any;
     children?: ValidInputElement | React.ReactElement<OptionProps> | Array<React.ReactElement<OptionProps>>;

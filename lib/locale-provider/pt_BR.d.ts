@@ -18,6 +18,8 @@ declare var _default: {
         filterConfirm: string;
         filterReset: string;
         emptyText: string;
+        selectAll: string;
+        selectInvert: string;
     };
     Modal: {
         okText: string;
@@ -36,6 +38,12 @@ declare var _default: {
     };
     Select: {
         notFoundContent: string;
+    };
+    Upload: {
+        uploading: string;
+        removeFile: string;
+        uploadError: string;
+        previewFile: string;
     };
 };
 export default _default;
