@@ -14,7 +14,7 @@
 
   &:not(&-no-hovering):hover {
     box-shadow: @box-shadow-base;
-    border-color: transparent;
+    border-color: @shadow-color;
   }
 
   &-bordered {
@@ -30,6 +30,7 @@
     border-radius: @border-radius-sm @border-radius-sm 0 0;
     .clearfix;
     margin-bottom: -1px; // Fix card grid overflow bug: https://gw.alipayobjects.com/zos/rmsportal/XonYxBikwpgbqIQBeuhk.png
+    display: flex;
 
     &-title {
       font-size: @font-size-lg;
@@ -40,11 +41,15 @@
       color: @card-head-color;
       font-weight: 500;
       display: inline-block;
+      flex: 1;
     }
   }
 
   &-extra {
     float: right;
+    text-align: right;
+    // https://stackoverflow.com/a/22429853/3040605
+    margin-left: auto;
   }
 
   &-body {

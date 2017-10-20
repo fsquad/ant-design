@@ -54,7 +54,7 @@ export type ValidationRule = {
   validator?: (rule: any, value: any, callback: any, source?: any, options?: any) => any;
 };
 
-export type ValidateCallback = (erros: any, values: any) => void;
+export type ValidateCallback = (errors: any, values: any) => void;
 
 export type GetFieldDecoratorOptions = {
   /** 子节点的值的属性，如 Checkbox 的是 'checked' */
@@ -71,6 +71,10 @@ export type GetFieldDecoratorOptions = {
   rules?: ValidationRule[];
   /** 是否和其他控件互斥，特别用于 Radio 单选控件 */
   exclusive?: boolean;
+  /** Normalize value to form component */
+  normalize?: (value: any, prevValue: any, allValues: any) => any;
+  /** Whether stop validate on first rule of error for this field.	 */
+  validateFirst?: boolean;
 };
 
 // function create

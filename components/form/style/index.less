@@ -71,7 +71,7 @@ input[type="checkbox"] {
   vertical-align: top;
 
   // nested FormItem
-  & > &,
+  & > &:last-child,
   & :not(.@{form-prefix-cls}) > & {
     margin-bottom: -@form-item-margin-bottom;
   }
@@ -166,6 +166,13 @@ form {
         margin-right: 21px;
       }
       &-clear {
+        right: 28px;
+      }
+    }
+
+    // Fix issue: https://github.com/ant-design/ant-design/issues/7854
+    .@{ant-prefix}-input-search {
+      .@{ant-prefix}-input-suffix {
         right: 28px;
       }
     }
@@ -278,7 +285,8 @@ form {
 // Form layout
 //== Vertical Form
 .make-vertical-layout() {
-  padding: 0 0 8px;
+  padding: @form-vertical-label-padding;
+  margin: @form-vertical-label-margin;
   display: block;
   text-align: left;
   line-height: @line-height-base;
@@ -435,6 +443,10 @@ form {
       border-color: @warning-color;
     }
   }
+
+  .@{ant-prefix}-cascader-picker:focus .@{ant-prefix}-cascader-input {
+    .active(@warning-color);
+  }
 }
 
 .has-error {
@@ -491,10 +503,14 @@ form {
         border-color: @error-color;
       }
     }
-    &.@{ant-prefix}-mention-active .@{ant-prefix}-mention-editor,
+    &.@{ant-prefix}-mention-active:not([disabled]) .@{ant-prefix}-mention-editor,
     .@{ant-prefix}-mention-editor:not([disabled]):focus {
       .active(@error-color);
     }
+  }
+
+  .@{ant-prefix}-cascader-picker:focus .@{ant-prefix}-cascader-input {
+    .active(@error-color);
   }
 }
 

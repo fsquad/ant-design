@@ -1,6 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Upload from '..';
+import { errorRequest, successRequest } from './requests';
 
 const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
 
@@ -58,5 +59,60 @@ describe('Upload List', () => {
     wrapper.find('.ant-upload-list-item').at(0).find('.anticon-cross').simulate('click');
     await delay(400);
     expect(wrapper.find('.ant-upload-list-item').length).toBe(1);
+  });
+
+  it('should be uploading when upload a file', (done) => {
+    let wrapper;
+    const onChange = ({ file }) => {
+      if (file.status === 'uploading') {
+        expect(wrapper.render()).toMatchSnapshot();
+      }
+      if (file.status === 'done') {
+        expect(wrapper.render()).toMatchSnapshot();
+        done();
+      }
+    };
+    wrapper = mount(
+      <Upload
+        action="http://jsonplaceholder.typicode.com/posts/"
+        onChange={onChange}
+        customRequest={successRequest}
+      >
+        <button>upload</button>
+      </Upload>
+    );
+    wrapper.find('input').simulate('change', {
+      target: {
+        files: [
+          { filename: 'foo.png' },
+        ],
+      },
+    });
+  });
+
+  it('handle error', (done) => {
+    let wrapper;
+    const onChange = ({ file }) => {
+      if (file.status !== 'uploading') {
+        expect(wrapper.render()).toMatchSnapshot();
+        done();
+      }
+    };
+    wrapper = mount(
+      <Upload
+        action="http://jsonplaceholder.typicode.com/posts/"
+        onChange={onChange}
+        customRequest={errorRequest}
+      >
+        <button>upload</button>
+      </Upload>
+    );
+    wrapper.find('input').simulate('change', {
+      target: {
+        files: [
+          { filename: 'foo.png' },
+        ],
+      },
+    });
   });
 });

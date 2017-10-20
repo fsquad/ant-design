@@ -27,9 +27,7 @@ Ant Design 是一个致力于提升『用户』和『设计者』使用体验的
 
 - [Ant Design of React](/docs/react/introduce)（官方实现）
 - <div class="outside-link"><a href="http://ng.ant.design" target="_blank">NG-ZORRO - Ant Design of Angular</a></div>
-- <div class="outside-link"><a href="https://github.com/iview/iview/" target="_blank">iView (vue)</a></div>
 - <div class="outside-link"><a href="https://github.com/FE-Driver/vue-beauty" target="_blank">vue-beauty</a></div>
-- <div class="outside-link"><a href="https://github.com/aliqin/atui" target="_blank">ATUI (vue)</a></div>
 - <div class="outside-link"><a href="https://github.com/priornix/antizer" target="_blank">antizer (ClojureScript)</a></div>
 - <div class="outside-link"><a href="https://github.com/idcos/antd-ember" target="_blank">antd-ember</a></div>
 
@@ -37,9 +35,12 @@ Ant Design 是一个致力于提升『用户』和『设计者』使用体验的
 
 - [蚂蚁金服](http://www.antgroup.com/)
 - [阿里巴巴](http://www.alibaba.com/)
+- [腾讯](http://www.tencent.com)
+- [百度](http://www.baidu.com)
 - [口碑](http://www.koubei.com/)
 - [美团](http://www.meituan.com)
 - [滴滴](http://www.xiaojukeji.com/)
+- [饿了么](https://www.ele.me/)
 
 > 如果你的公司和产品使用了 Ant Design，欢迎到 [这里](https://github.com/ant-design/ant-design/issues/477) 留言。
 

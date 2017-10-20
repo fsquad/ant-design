@@ -2,13 +2,14 @@ import React from 'react';
 import { mount } from 'enzyme';
 import moment from 'moment';
 import { LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
-         Popconfirm, Table, Modal, Select, Transfer } from '../../';
+  Popconfirm, Table, Modal, Select, Transfer } from '../../';
 import enGB from '../en_GB';
 import frFR from '../fr_FR';
 import nlBE from '../nl_BE';
 import itIT from '../it_IT';
 import enUS from '../en_US';
 import ptBR from '../pt_BR';
+import ptPT from '../pt_PT';
 import ruRU from '../ru_RU';
 import esES from '../es_ES';
 import svSE from '../sv_SE';
@@ -33,10 +34,10 @@ import elGR from '../el_GR';
 import nbNO from '../nb_NO';
 import srRS from '../sr_RS';
 
-const locales = [enUS, ptBR, ruRU, esES, svSE, frBE, deDE, nlNL, caES, csCZ, koKR, etEE, skSK, jaJP, trTR, zhTW, fiFI, plPL, bgBG, enGB, frFR, nlBE, itIT, viVN, thTH, faIR, elGR, nbNO, srRS];
+const locales = [enUS, ptPT, ptBR, ruRU, esES, svSE, frBE, deDE, nlNL, caES, csCZ, koKR, etEE, skSK, jaJP, trTR, zhTW, fiFI, plPL, bgBG, enGB, frFR, nlBE, itIT, viVN, thTH, faIR, elGR, nbNO, srRS];
 
-const Option = Select.Option;
-const RangePicker = DatePicker.RangePicker;
+const { Option } = Select;
+const { RangePicker } = DatePicker;
 
 const columns = [{
   title: 'Name',

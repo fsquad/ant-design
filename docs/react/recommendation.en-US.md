@@ -3,7 +3,7 @@ order: 7
 title: Third-Party Libraries
 ---
 
-`antd` is designed to provide high-quality React UI components which following Ant Design Specification. So, we are not going to implement other functions which are not relative to `antd`'s target, and recommend to use excellent third-party library which came from React community:
+`antd` is designed to provide high-quality React UI components which follow the Ant Design Specification. So, we are not going to implement other functions which are not relative to `antd`'s target, and recommend using the excellent third-party library which have come from the React community:
 
 Category | Recommended Components
 ---------|-----------------------
@@ -24,6 +24,7 @@ i18n | [react-intl](https://github.com/yahoo/react-intl)
 Code highlight | [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter)
 Markdown renderer | [react-markdown](http://rexxars.github.io/react-markdown/)
 Infinite Scroll | [react-virtualized](https://github.com/bvaughn/react-virtualized)
+Map | [react-google-maps](https://github.com/tomchentw/react-google-maps) [google-map-react](https://github.com/istarkov/google-map-react) [react-amap](https://github.com/ElemeFE/react-amap)
 
 <style>
 .markdown table td:first-child {

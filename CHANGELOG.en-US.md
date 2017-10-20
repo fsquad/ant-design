@@ -17,6 +17,78 @@ If you want to read change logs before `2.0.0`, please visit [GitHub](https://gi
 
 ---
 
+## 2.13.6
+
+`2017-10-12`
+
+- 🐞 Fix issue that `beforeUpload` will stop uploading when return undefined. [#7870](https://github.com/ant-design/ant-design/issues/7870)
+
+## 2.13.5
+
+`2017-10-11`
+
+- 🐞 Fix issue resulting in FormItem throws error when use with reac-hot-loader. [#7775](https://github.com/ant-design/ant-design/issues/7775)
+- 🐞 Fix not working less variable `@link-hover-decoration`. [#7821](https://github.com/ant-design/ant-design/issues/7821)
+- 🐞 Fix issue resulting in Upload's `beforeUpload` method not returning promise properly. [#7833](https://github.com/ant-design/ant-design/issues/7833)
+- 🐞 Fix issue resulting in Input.Search's search icon being covered with Form's feedback icon. [#7854](https://github.com/ant-design/ant-design/issues/7854)
+- AutoComplete
+  - 🐞 Fix circular reference with infinite children [#7742](https://github.com/ant-design/ant-design/pull/7742) [@menberg](https://github.com/ant-design/ant-design/pull/7742)
+  - 🐞 Fix style when use with TextArea. [#7801](https://github.com/ant-design/ant-design/issues/7800)
+- 🌟 Improve TypeScript definition. [cf788d7](https://github.com/ant-design/ant-design/commit/cf788d7b4dda58f61da91086ccfe0c67872fc709) [d4c75d43](https://github.com/ant-design/ant-design/commit/d4c75d43a1824d36583d9d8f9b209a4b9526a3af)
+- 🌟 Add new less variable. [2e2acb5](https://github.com/ant-design/ant-design/commit/2e2acb5be9a171f217f2a1a143b34b2624b49b06)
+
+## 2.13.4
+
+`2017-09-29`
+
+- 🐞 Fix missing Pagination `size="small"` style.
+- 🐞 Fix Anchor missing padding. [#7712](https://github.com/ant-design/ant-design/issues/7712)
+- 🐞 Fix TreeSelect extra select below search input. [#7703](https://github.com/ant-design/ant-design/issues/7703)
+- 🐞 Fix the jumping problem of Form validate text. [#7730](https://github.com/ant-design/ant-design/issues/7730)
+- 🐞 Fix Button Group loading style. [#7709](https://github.com/ant-design/ant-design/issues/7709)
+- 🐞 Fix blur placeholder text color. [#7365](https://github.com/ant-design/ant-design/issues/7365)
+- 🐞 Fix Mention `suggestion.toLowerCase is not a function` error. [#7696](https://github.com/ant-design/ant-design/issues/7696) [@kappa-gooner](https://github.com/kappa-gooner)
+- 🐞 Fix a children height problem of Layout.Sider. [#7716](https://github.com/ant-design/ant-design/pull/7716) [@zheeeng](https://github.com/zheeeng)
+- 🐞 Fix Dropdown menu group style.
+- 🐞 Fix Table filter icon and dropdown style.
+- 🐞 Fix a AutoComplete circular reference bug in Inferno. [#7742](https://github.com/ant-design/ant-design/pull/7742) [@menberg](https://github.com/menberg)
+- 🐞 Fix Upload cannot upload file when using `beforeUpload`. [#7762](https://github.com/ant-design/ant-design/issues/7762) [#6983](https://github.com/ant-design/ant-design/issues/6983)
+- TypeScript
+  - 🐞 Fix Input `maxLength` definite. [#7744](https://github.com/ant-design/ant-design/pull/7744) [@delesseps](https://github.com/delesseps)
+  - 🐞 Fix `disabledTime` definite of DatePicker. [#7740](https://github.com/ant-design/ant-design/pull/7740) [@778758944](https://github.com/778758944)
+
+## 2.13.3
+
+`2017-09-22`
+
+- 🐞 Fix Affix scrolling bug when document's height minus viewport's height is smaller than the height of children of Affix. [#2349](https://github.com/ant-design/ant-design/issues/2349)
+- 🐞 Fix broken style of header of Card when `Card[title]` is void and `Card[extra]` is set. [f46112d#commitcomment-24480417](https://github.com/ant-design/ant-design/commit/f46112d38561c89780eb44ecbba82347d2b912da#commitcomment-24480417)
+- 🐞 Fix TypeScript definition of `Checkbox[children]`. [#7650](https://github.com/ant-design/ant-design/issues/7650) [@liaokaien](https://github.com/liaokaien)
+- 🐞 Fix error when set nested name in `getFieldDecorator` and then click the label of `Form.Item`. [#7693](https://github.com/ant-design/ant-design/issues/7693)
+- Input
+  - 🐞 Fix broken style of `Input.Group[compat]` when it has `Select` as its children. [#7662](https://github.com/ant-design/ant-design/issues/7662)
+  - 🐞 Fix TypeScript definition of `Input[autoComplete]`. [#7699](https://github.com/ant-design/ant-design/pull/7699) [@delesseps](https://github.com/delesseps)
+- LocaleProvider
+  - 🇵🇹 Support Portuguese. [#7449](https://github.com/ant-design/ant-design/pull/7449) [@taviroquai](https://github.com/taviroquai)
+  - 🐞 Fix missing translations in Dutch locale. [#7694](https://github.com/ant-design/ant-design/pull/7694) [@kstiopin](https://github.com/kstiopin)
+- Table
+  - 🐞 Fix height of table header when `rowSelection` is set. [#7663](https://github.com/ant-design/ant-design/issues/7663)
+  - 🐞 Fix bug that click on first two options will not trigger event when `rowSelection.hideDefaultselections` is set. [#7626](https://github.com/ant-design/ant-design/issues/7626) [@infeng](https://github.com/infeng)
+  - 🐞 Fix TypeScript definition of `Table[scroll]`. [#7640](https://github.com/ant-design/ant-design/pull/7640) [@BlackGanglion](https://github.com/BlackGanglion)
+
+
+## 2.13.2
+
+`2017-09-15`
+
+- 🐞 Fix title and extra content position of narrow Card. [#7604](https://github.com/ant-design/ant-design/issues/7604)
+- 🐞 Fix inlineCollapsed style of MenuItemGroup. [#7109](https://github.com/ant-design/ant-design/issues/7109)
+- 🐞 Revert [#7142](https://github.com/ant-design/ant-design/issues/7142) to fix empty data style of Table.
+- 🐞 Fix Form `getFieldDecoratorOptions` missing types of `normalize` and `validateFirst`. [#7552](https://github.com/ant-design/ant-design/issues/7552) [@meteor91](https://github.com/meteor91) [@mitchelldemler](https://github.com/mitchelldemler)
+- 🐞 Fix Modal `zIndex` type. [#7624](https://github.com/ant-design/ant-design/issues/7624)
+- 🌟 Improve tree node loading icon position. [#7584](https://github.com/ant-design/ant-design/issues/7584)
+- 🌟 Update a lot of components's English doc. [@khalibloo](https://github.com/khalibloo)
+
 ## 2.13.1
 
 `2017-09-10`
@@ -66,7 +138,6 @@ If you want to read change logs before `2.0.0`, please visit [GitHub](https://gi
 
 - 📖 Rewrite the [Use in create-react-app](/docs/react/use-with-create-react-app) documentation without ejecting.  [#7276](https://github.com/ant-design/ant-design/pull/7276)
 - 🌟 Better empty data style for fixed-columns Table. [#7298](https://github.com/ant-design/ant-design/issues/7298)
-   ![](https://gw.alipayobjects.com/zos/rmsportal/kpxITHnXvsLlMTqEKgUm.gif)
 - 🐞 Fix `disabled` logic of CheckboxGroup and Checkbox. [#7266](https://github.com/ant-design/ant-design/issues/7266) [@dilidili](https://github.com/dilidili)
 - 🐞 Fix errors of rendering Spin and Carousel in react-snapshot or other jsdom environment. [#3308](https://github.com/ant-design/ant-design/issues/3308) [#7318](https://github.com/ant-design/ant-design/issues/7318)
 - 🐞 Fix some details of Select, Tooltip and Menu.
@@ -220,7 +291,7 @@ If you want to read change logs before `2.0.0`, please visit [GitHub](https://gi
 - Add Input.Textarea, Input[type='textArea'] will be deprecated. [pull/6138](https://github.com/ant-design/ant-design/pull/6138)
 - LocaleProvider supporting Thai. [pull/6721](https://github.com/ant-design/ant-design/pull/6721) [@koobitor](https://github.com/koobitor)
 - Mention support `focus` function. [#6135](https://github.com/ant-design/ant-design/issues/6135)
-- Menu[mode='inline'] could be collapsed, and use `context` to pass `collapsed` prop from Layout.Sider to Menu, don't need customized css code anymore. [pull/6686](https://github.com/ant-design/ant-design/pull/6686)
+- Menu inline mode could be collapsed by `inlineCollapsed`, and use `context` to pass `collapsed` prop from Layout.Sider to Menu, don't need customized css code anymore. [pull/6686](https://github.com/ant-design/ant-design/pull/6686)
 - Add Pagination `itemRender`, now you can customize the structure of page number. [25a603](https://github.com/ant-design/ant-design/commit/25a60322e5c6649522fb9f0d34919eba0ccb1f65)
 - Add Tooltip `autoAdjustOverflow` prop, now the auto adjust feature can be disabled. [pull/6661](https://github.com/ant-design/ant-design/pull/6661) [@jdz321](https://github.com/jdz321)
 - Fix errors in docs of Avatar. [pull/6711](https://github.com/ant-design/ant-design/pull/6711) [@llaski](https://github.com/llaski)
@@ -636,7 +707,7 @@ If you want to read change logs before `2.0.0`, please visit [GitHub](https://gi
   - Fix that `Cannot find module '../../package.json'` error. [#4935](https://github.com/ant-design/ant-design/issues/4935)
   - Fix definitions of Table, RangePicker and Upload.
 - Fix lack of event argument for Modal `onOk` `afterClose` and Popconfirm `onConfirm` `onCancel`. [#4787](https://github.com/ant-design/ant-design/issues/4787)
-- Improve animation of Menu[inline] and Collapse.
+- Improve animation of Menu inline mode and Collapse.
 - Improve Checkbox and Radio vertical align style.
 - Table
   - Fix misplace header when fix column. [#4936](https://github.com/ant-design/ant-design/issues/4936)

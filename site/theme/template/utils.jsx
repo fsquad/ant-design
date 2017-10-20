@@ -37,7 +37,7 @@ export function getLocalizedPathname(path, zhCN) {
 
 export function ping(callback) {
   // eslint-disable-next-line
-  const url = 'https://private.alipay' + 'objects.com/alip' + 'ay-rmsdeploy-image/rmsportal/RKuAiriJqrUhyqW.png';
+  const url = 'https://private-a' + 'lipay' + 'objects.alip' + 'ay.com/alip' + 'ay-rmsdeploy-image/rmsportal/RKuAiriJqrUhyqW.png';
   const img = new Image();
   let done;
   const finish = (status) => {
@@ -63,4 +63,15 @@ export function isLocalStorageNameSupported() {
   } catch (error) {
     return false;
   }
+}
+
+export function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
 }

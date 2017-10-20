@@ -82,8 +82,8 @@ export default class Demo extends React.Component {
   }
 
   render() {
-    const state = this.state;
-    const props = this.props;
+    const { state } = this;
+    const { props } = this;
     const {
       meta,
       src,
@@ -105,7 +105,7 @@ export default class Demo extends React.Component {
       expand: codeExpand,
     });
 
-    const locale = this.context.intl.locale;
+    const { locale } = this.context.intl;
     const localizedTitle = meta.title[locale] || meta.title;
     const localizeIntro = content[locale] || content;
     const introChildren = props.utils
@@ -129,8 +129,8 @@ export default class Demo extends React.Component {
       editors: '001',
       css_external: 'https://unpkg.com/antd/dist/antd.css',
       js_external: [
-        'react/dist/react.js',
-        'react-dom/dist/react-dom.js',
+        'react@15.x/dist/react.js',
+        'react-dom@15.x/dist/react-dom.js',
         'moment/min/moment-with-locales.js',
         'antd/dist/antd-with-locales.js',
       ].map(url => `https://unpkg.com/${url}`).join(';'),

@@ -93,7 +93,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ### 4. 开发调试
 
-一键启动调试，访问 http://127.0.0.1:8000 查看效果。
+一键启动调试，访问 http://127.0.0.1:8001 查看效果。
 
 ```bash
 $ npm start
@@ -183,6 +183,8 @@ import { Button } from 'antd';
 ```
 
 插件会帮你转换成 `antd/lib/xxx` 的写法。另外此插件配合 [style](https://github.com/ant-design/babel-plugin-import#usage) 属性可以做到模块样式的按需自动加载。
+
+> 注意，babel-plugin-import 的 `style` 属性除了引入对应组件的样式，也会引入一些必要的全局样式。如果你不需要它们，建议不要使用此属性。你可以 `import 'antd/dist/antd.css` 手动引入，并覆盖全局样式。
 
 ## 配置主题和字体
 

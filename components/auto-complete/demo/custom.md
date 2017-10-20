@@ -45,12 +45,16 @@ class Complete extends React.Component {
     return (
       <AutoComplete
         dataSource={dataSource}
-        style={{ width: 200, height: 50 }}
+        style={{ width: 200 }}
         onSelect={onSelect}
         onSearch={this.handleSearch}
-        placeholder="input here"
       >
-        <TextArea onKeyPress={this.handleKeyPress} style={{ height: 50 }} />
+        <TextArea
+          placeholder="input here"
+          className="custom"
+          style={{ height: 50 }}
+          onKeyPress={this.handleKeyPress}
+        />
       </AutoComplete>
     );
   }

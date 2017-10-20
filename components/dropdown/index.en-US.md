@@ -18,13 +18,13 @@ If there are too many operations to display, you can wrap them in a `Dropdown`. 
 |--------------|----------------|----------|--------------|
 | trigger        | the trigger mode which executes the drop-down action  | Array<`click`\|`hover`>   | [`hover`]           |
 | overlay | the dropdown menu       | [Menu](/components/menu)   | -           |
-| getPopupContainer       | to set the container of the dropdown menu. The default is to create a `div` element in `body`, you can reset it to the scrolling area and make a relative reposition. [example](http://codepen.io/anon/pen/xVBOVQ?editors=001)   | Function(triggerNode)   | () => document.body |
+| getPopupContainer       | to set the container of the dropdown menu. The default is to create a `div` element in `body`, you can reset it to the scrolling area and make a relative reposition. [example](https://codepen.io/afc163/pen/zEjNOy?editors=0010)   | Function(triggerNode)   | () => document.body |
 | visible | whether the dropdown menu is visible | boolean | -           |
 | disabled| whether the dropdown menu is disabled| boolean | -           |
 | onVisibleChange     | a callback function takes an argument: `visible`, is executed when the visible state is changed | Function(visible) | - |
 | placement | placement of pop menu: `bottomLeft` `bottomCenter` `bottomRight` `topLeft` `topCenter` `topRight` | String | `bottomLeft` |
 
-You can get the menu list by `antd.Menu`, and set a callback function `onSelect` for it if you need. The menu items and the dividers are also available, by using `Menu.Item` and `Menu.Divider` respectively.
+You should use [Menu](/components/menu/) as `overlay`. The menu items and dividers are also available by using `Menu.Item` and `Menu.Divider`.
 
 > Warning: You must set a unique `key` for `Menu.Item`.
 
