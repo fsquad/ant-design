@@ -64,7 +64,7 @@ ReactDOM.render(<IconSet className="icons" catigory="logo" />, mountNode);
 
 ## API
 
-You can set `style` and `className` for size and color of icons because they are still words in essence.
+You can set `style` and `className` for size and color of icons because they are still fonts in essence.
 
 ```jsx
 <Icon type="question" style={{ fontSize: 16, color: '#08c' }} />
@@ -72,5 +72,6 @@ You can set `style` and `className` for size and color of icons because they are
 
 | Property | Description      | Type   | Default |
 |----------|------------------|------- |---------|
-| type | Type of ant design icons | string | - |
+| type | Type of ant design icon | string | - |
 | spin | Rotate icon with animation | boolean | false |
+| style | style properties of icon, like fontSize and color | object | - |

@@ -54,6 +54,7 @@
     right: 8px;
     line-height: 1;
     margin-top: -6px;
+    color: @text-color-secondary;
     .iconfont-size-under-12px(9px);
 
     * {
@@ -237,6 +238,7 @@
   &-search--inline {
     position: absolute;
     height: 100%;
+    width: 100%;
 
     .@{select-prefix-cls}-selection--multiple & {
       float: left;
@@ -280,7 +282,9 @@
     .@{select-prefix-cls}-search--inline {
       width: auto;
       padding: 0;
+      max-width: 100%;
       .@{select-prefix-cls}-search__field {
+        max-width: 100%;
         width: 0.75em;
       }
     }
@@ -466,10 +470,6 @@
         background-color: @item-hover-bg;
       }
 
-      &-active {
-        background-color: @item-active-bg;
-      }
-
       &-disabled {
         color: @disabled-color;
         cursor: not-allowed;
@@ -485,9 +485,13 @@
         &,
         &:hover {
           background-color: @background-color-base;
-          font-weight: bold;
+          font-weight: 600;
           color: @text-color;
         }
+      }
+
+      &-active {
+        background-color: @item-active-bg;
       }
 
       &-divider {

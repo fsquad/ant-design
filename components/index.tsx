@@ -1,3 +1,4 @@
+/* @remove-on-es-build-begin */
 // this file is not used if use https://github.com/ant-design/babel-plugin-import
 const ENV = process.env.NODE_ENV;
 if (ENV !== 'production' &&
@@ -10,6 +11,7 @@ if (ENV !== 'production' &&
     'please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.',
   );
 }
+/* @remove-on-es-build-end */
 
 export { default as Affix } from './affix';
 
@@ -18,6 +20,8 @@ export { default as Anchor } from './anchor';
 export { default as AutoComplete } from './auto-complete';
 
 export { default as Alert } from './alert';
+
+export { default as Avatar } from './avatar';
 
 export { default as BackTop } from './back-top';
 

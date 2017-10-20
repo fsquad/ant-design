@@ -5,7 +5,6 @@ import MonthCalendar from 'rc-calendar/lib/MonthCalendar';
 import RcDatePicker from 'rc-calendar/lib/Picker';
 import classNames from 'classnames';
 import omit from 'omit.js';
-import assign from 'object-assign';
 import Icon from '../icon';
 import { getLocaleCode } from '../_util/getLocale';
 import warning from '../_util/warning';
@@ -33,7 +32,7 @@ export default function createPicker(TheCalendar): any {
       if (value && !moment.isMoment(value)) {
         throw new Error(
           'The value/defaultValue of DatePicker or MonthPicker must be ' +
-          'a moment object after `antd@2.0`, see: http://u.ant.design/date-picker-value',
+          'a moment object after `antd@2.0`, see: https://u.ant.design/date-picker-value',
         );
       }
       this.state = {
@@ -47,6 +46,15 @@ export default function createPicker(TheCalendar): any {
           value: nextProps.value,
         });
       }
+    }
+
+    renderFooter = (...args) => {
+      const { prefixCls, renderExtraFooter } = this.props;
+      return renderExtraFooter ? (
+        <div className={`${prefixCls}-footer-extra`}>
+          {renderExtraFooter(...args)}
+        </div>
+      ) : null;
     }
 
     clearSelection = (e) => {
@@ -107,6 +115,7 @@ export default function createPicker(TheCalendar): any {
           format={props.format}
           showToday={props.showToday}
           monthCellContentRender={props.monthCellContentRender}
+          renderFooter={this.renderFooter}
         />
       );
 
@@ -125,7 +134,7 @@ export default function createPicker(TheCalendar): any {
       ) : null;
 
       const input = ({ value: inputValue }) => (
-        <span>
+        <div>
           <input
             disabled={props.disabled}
             readOnly
@@ -135,7 +144,7 @@ export default function createPicker(TheCalendar): any {
           />
           {clearIcon}
           <span className={`${prefixCls}-picker-icon`} />
-        </span>
+        </div>
       );
 
       const pickerValue = value;
@@ -143,8 +152,12 @@ export default function createPicker(TheCalendar): any {
       if (pickerValue && localeCode) {
         pickerValue.locale(localeCode);
       }
+      const style = {
+        ...props.style,
+        ...pickerStyle,
+      };
       return (
-        <span className={props.pickerClass} style={assign({}, props.style, pickerStyle)}>
+        <span className={classNames(props.className, props.pickerClass)} style={style}>
           <RcDatePicker
             {...props}
             {...pickerChangeHandler}

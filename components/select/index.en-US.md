@@ -4,7 +4,7 @@ type: Data Entry
 title: Select
 ---
 
-A Selector similar to Select2.
+Select component to select value from options.
 
 ## When To Use
 
@@ -37,7 +37,7 @@ A Selector similar to Select2.
 | onSearch | Callback function that is fired when input changed. | function(value: string) |  |
 | onBlur | Called when blur | function | - |
 | onFocus | Called when focus | function | - |
-| placeholder | Placeholder of select | string | - |
+| placeholder | Placeholder of select | string\|ReactNode | - |
 | notFoundContent | Specify content to show when no result matches..| string | 'Not Found' |
 | dropdownMatchSelectWidth | Whether dropdown's with is same with select. | boolean | true |
 | optionFilterProp | Which prop value of option will be used for filter if filterOption is true | string | value |
@@ -51,7 +51,7 @@ A Selector similar to Select2.
 | getPopupContainer | Parent Node which the selector should be rendered to. Default to `body`. When position issues happen, try to modify it into scrollable content and position it relative.[example](http://codepen.io/anon/pen/xVBOVQ?editors=001) | function(triggerNode) | () => document.body |
 | labelInValue | whether to embed label in value, turn the format of value from `string` to `{key: string, label: ReactNode}` | boolean | false |
 | tokenSeparators | Separator used to tokenize on tag/multiple mode | string[] |  |
-
+| firstActiveValue | Value of action option by default | string\|string[] |  -  |
 
 ### Option props
 

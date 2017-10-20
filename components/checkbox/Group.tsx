@@ -4,9 +4,11 @@ import classNames from 'classnames';
 import shallowEqual from 'shallowequal';
 import Checkbox from './Checkbox';
 
+export type CheckboxValueType = string | number;
+
 export interface CheckboxOptionType {
   label: string;
-  value: string;
+  value: CheckboxValueType;
   disabled?: boolean;
 }
 
@@ -19,9 +21,9 @@ export interface AbstractCheckboxGroupProps {
 }
 
 export interface CheckboxGroupProps extends AbstractCheckboxGroupProps {
-  defaultValue?: Array<string>;
-  value?: Array<string>;
-  onChange?: (checkedValue: Array<string>) => void;
+  defaultValue?: Array<CheckboxValueType>;
+  value?: Array<CheckboxValueType>;
+  onChange?: (checkedValue: Array<CheckboxValueType>) => void;
 }
 
 export interface CheckboxGroupState {

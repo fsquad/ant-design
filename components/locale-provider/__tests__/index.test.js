@@ -3,6 +3,10 @@ import { mount } from 'enzyme';
 import moment from 'moment';
 import { LocaleProvider, Pagination, DatePicker, TimePicker, Calendar,
          Popconfirm, Table, Modal, Select, Transfer } from '../../';
+import enGB from '../en_GB';
+import frFR from '../fr_FR';
+import nlBE from '../nl_BE';
+import itIT from '../it_IT';
 import enUS from '../en_US';
 import ptBR from '../pt_BR';
 import ruRU from '../ru_RU';
@@ -20,8 +24,16 @@ import jaJP from '../ja_JP';
 import trTR from '../tr_TR';
 import zhTW from '../zh_TW';
 import fiFI from '../fi_FI';
+import plPL from '../pl_PL';
+import bgBG from '../bg_BG';
+import viVN from '../vi_VN';
+import thTH from '../th_TH';
+import faIR from '../fa_IR';
+import elGR from '../el_GR';
+import nbNO from '../nb_NO';
+import srRS from '../sr_RS';
 
-const locales = [enUS, ptBR, ruRU, esES, svSE, frBE, deDE, nlNL, caES, csCZ, koKR, etEE, skSK, jaJP, trTR, zhTW, fiFI];
+const locales = [enUS, ptBR, ruRU, esES, svSE, frBE, deDE, nlNL, caES, csCZ, koKR, etEE, skSK, jaJP, trTR, zhTW, fiFI, plPL, bgBG, enGB, frFR, nlBE, itIT, viVN, thTH, faIR, elGR, nbNO, srRS];
 
 const Option = Select.Option;
 const RangePicker = DatePicker.RangePicker;

@@ -24,6 +24,9 @@ npm-debug.log
 nohup.out
 _site
 _data
+dist
+/lib
+/es
 elasticsearch-*
 config/base.yaml
 /.vscode/
@@ -33,3 +36,4 @@ components/**/*.js
 components/**/*.jsx
 !components/**/__tests__/*.js
 !components/**/__tests__/*.js.snap
+/.history

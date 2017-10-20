@@ -12,6 +12,22 @@ exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
     <div
       class="ant-tabs-nav-container"
     >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
       <div
         class="ant-tabs-nav-wrap"
       >
@@ -80,7 +96,7 @@ exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
 
 exports[`renders ./components/tabs/demo/card.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-card"
+  class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-no-animation"
 >
   <div
     class="ant-tabs-bar"
@@ -90,6 +106,22 @@ exports[`renders ./components/tabs/demo/card.md correctly 1`] = `
     <div
       class="ant-tabs-nav-container"
     >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
       <div
         class="ant-tabs-nav-wrap"
       >
@@ -160,7 +192,7 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
   class="card-container"
 >
   <div
-    class="ant-tabs ant-tabs-top ant-tabs-card"
+    class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-no-animation"
   >
     <div
       class="ant-tabs-bar"
@@ -170,6 +202,22 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
       <div
         class="ant-tabs-nav-container"
       >
+        <span
+          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-next-icon"
+          />
+        </span>
         <div
           class="ant-tabs-nav-wrap"
         >
@@ -188,7 +236,7 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
                 class="ant-tabs-tab-active ant-tabs-tab"
                 role="tab"
               >
-                Tab 1
+                Tab Title 1
               </div>
               <div
                 aria-disabled="false"
@@ -196,7 +244,7 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
                 class=" ant-tabs-tab"
                 role="tab"
               >
-                Tab 2
+                Tab Title 2
               </div>
               <div
                 aria-disabled="false"
@@ -204,7 +252,7 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
                 class=" ant-tabs-tab"
                 role="tab"
               >
-                Tab 3
+                Tab Title 3
               </div>
             </div>
           </div>
@@ -219,7 +267,15 @@ exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
         class="ant-tabs-tabpane ant-tabs-tabpane-active"
         role="tabpanel"
       >
-        Content of Tab Pane 1
+        <p>
+          Content of Tab Pane 1
+        </p>
+        <p>
+          Content of Tab Pane 1
+        </p>
+        <p>
+          Content of Tab Pane 1
+        </p>
       </div>
       <div
         aria-hidden="true"
@@ -251,7 +307,7 @@ exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
     </button>
   </div>
   <div
-    class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card"
+    class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card ant-tabs-no-animation"
   >
     <div
       class="ant-tabs-bar"
@@ -261,6 +317,22 @@ exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
       <div
         class="ant-tabs-nav-container"
       >
+        <span
+          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-next-icon"
+          />
+        </span>
         <div
           class="ant-tabs-nav-wrap"
         >
@@ -336,6 +408,22 @@ exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
     <div
       class="ant-tabs-nav-container"
     >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
       <div
         class="ant-tabs-nav-wrap"
       >
@@ -404,7 +492,7 @@ exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
 
 exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
 <div
-  class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card"
+  class="ant-tabs ant-tabs-top ant-tabs-card ant-tabs-editable-card ant-tabs-no-animation"
 >
   <div
     class="ant-tabs-bar"
@@ -412,21 +500,34 @@ exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
     tabindex="0"
   >
     <div
+      class="ant-tabs-extra-content"
       style="float:right;"
     >
-      <div
-        class="ant-tabs-extra-content"
-      >
-        <span>
-          <i
-            class="anticon anticon-plus ant-tabs-new-tab"
-          />
-        </span>
-      </div>
+      <span>
+        <i
+          class="anticon anticon-plus ant-tabs-new-tab"
+        />
+      </span>
     </div>
     <div
       class="ant-tabs-nav-container"
     >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
       <div
         class="ant-tabs-nav-wrap"
       >
@@ -498,24 +599,37 @@ exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
     tabindex="0"
   >
     <div
+      class="ant-tabs-extra-content"
       style="float:right;"
     >
-      <div
-        class="ant-tabs-extra-content"
+      <button
+        class="ant-btn"
+        type="button"
       >
-        <button
-          class="ant-btn"
-          type="button"
-        >
-          <span>
-            Extra Action
-          </span>
-        </button>
-      </div>
+        <span>
+          Extra Action
+        </span>
+      </button>
     </div>
     <div
       class="ant-tabs-nav-container"
     >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
       <div
         class="ant-tabs-nav-wrap"
       >
@@ -594,6 +708,22 @@ exports[`renders ./components/tabs/demo/icon.md correctly 1`] = `
     <div
       class="ant-tabs-nav-container"
     >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
       <div
         class="ant-tabs-nav-wrap"
       >
@@ -707,6 +837,22 @@ exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
       <div
         class="ant-tabs-nav-container"
       >
+        <span
+          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-next-icon"
+          />
+        </span>
         <div
           class="ant-tabs-nav-wrap"
         >
@@ -786,6 +932,22 @@ exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
     <div
       class="ant-tabs-nav-container"
     >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
       <div
         class="ant-tabs-nav-wrap"
       >
@@ -908,6 +1070,22 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
       <div
         class="ant-tabs-nav-container"
       >
+        <span
+          class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="ant-tabs-tab-next-icon"
+          />
+        </span>
         <div
           class="ant-tabs-nav-wrap"
         >
@@ -992,6 +1170,22 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
               >
                 Tab 9
               </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" ant-tabs-tab"
+                role="tab"
+              >
+                Tab 10
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" ant-tabs-tab"
+                role="tab"
+              >
+                Tab 11
+              </div>
             </div>
           </div>
         </div>
@@ -1008,6 +1202,16 @@ exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
       >
         Content of tab 1
       </div>
+      <div
+        aria-hidden="true"
+        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="ant-tabs-tabpane ant-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
       <div
         aria-hidden="true"
         class="ant-tabs-tabpane ant-tabs-tabpane-inactive"

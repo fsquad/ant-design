@@ -18,6 +18,25 @@
       border-color: @primary-color;
     }
 
+    &-checked:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: @border-radius-sm;
+      border: 1px solid @primary-color;
+      content: '';
+      animation: antCheckboxEffect 0.36s ease-in-out;
+      animation-fill-mode: both;
+      visibility: hidden;
+    }
+
+    &:hover:after,
+    .@{checkbox-prefix-cls}-wrapper:hover &:after {
+      visibility: visible;
+    }
+
     &-inner {
       position: relative;
       top: 0;
@@ -71,6 +90,10 @@
     height: 1px;
   }
 
+  .@{checkbox-prefix-cls}-indeterminate.@{checkbox-prefix-cls}-disabled .@{checkbox-inner-prefix-cls}:after {
+    border-color: @disabled-color;
+  }
+
   // 选中状态
   .@{checkbox-prefix-cls}-checked .@{checkbox-inner-prefix-cls}:after {
     transform: rotate(45deg) scale(1);
@@ -96,6 +119,8 @@
   }
 
   .@{checkbox-prefix-cls}-disabled {
+    cursor: not-allowed;
+
     &.@{checkbox-prefix-cls}-checked {
       .@{checkbox-inner-prefix-cls}:after {
         animation-name: none;
@@ -108,7 +133,7 @@
     }
 
     .@{checkbox-inner-prefix-cls} {
-      border-color: @border-color-base!important;
+      border-color: @border-color-base !important;
       background-color: @input-disabled-bg;
       &:after {
         animation-name: none;
@@ -159,5 +184,16 @@
       top: 3px;
       position: absolute;
     }
+  }
+}
+
+@keyframes antCheckboxEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
   }
 }

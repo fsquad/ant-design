@@ -7,7 +7,7 @@ import warning from '../_util/warning';
 
 export interface BadgeProps {
   /** Number to show in badge */
-  count: number | string;
+  count?: number | string;
   showZero?: boolean;
   /** Max count to show */
   overflowCount?: number;
@@ -54,7 +54,7 @@ export default class Badge extends React.Component<BadgeProps, any> {
       ...restProps,
     } = this.props;
     const isDot = dot || status;
-    let displayCount = count > (overflowCount as number) ? `${overflowCount}+` : count;
+    let displayCount = (count as number) > (overflowCount as number) ? `${overflowCount}+` : count;
     // dot mode don't need count
     if (isDot) {
       displayCount = '';
@@ -95,6 +95,7 @@ export default class Badge extends React.Component<BadgeProps, any> {
         data-show={!hidden}
         className={scrollNumberCls}
         count={displayCount}
+        title={count}
         style={style}
       />
     );
@@ -104,7 +105,7 @@ export default class Badge extends React.Component<BadgeProps, any> {
     );
 
     return (
-      <span {...restProps} className={badgeCls} title={count as string}>
+      <span {...restProps} className={badgeCls}>
         {children}
         <Animate
           component=""

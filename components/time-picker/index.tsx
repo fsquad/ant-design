@@ -2,9 +2,21 @@ import React from 'react';
 import moment from 'moment';
 import RcTimePicker from 'rc-time-picker/lib/TimePicker';
 import classNames from 'classnames';
-import assign from 'object-assign';
 import injectLocale from '../locale-provider/injectLocale';
 import defaultLocale from './locale/zh_CN';
+
+export function generateShowHourMinuteSecond(format: string) {
+  // Ref: http://momentjs.com/docs/#/parsing/string-format/
+  return {
+    showHour: (
+      format.indexOf('H') > -1 ||
+        format.indexOf('h') > -1 ||
+        format.indexOf('k') > -1
+    ),
+    showMinute: format.indexOf('m') > -1,
+    showSecond: format.indexOf('s') > -1,
+  };
+}
 
 export interface TimePickerProps {
   className?: string;
@@ -17,6 +29,7 @@ export interface TimePickerProps {
   onOpenChange?: (open: boolean) => void;
   disabled?: boolean;
   placeholder?: string;
+  prefixCls?: string;
   hideDisabledOptions?: boolean;
   disabledHours?: () => number[];
   disabledMinutes?: (selectedHour: number) => number[];
@@ -50,7 +63,7 @@ abstract class TimePicker extends React.Component<TimePickerProps, any> {
     if (value && !moment.isMoment(value)) {
       throw new Error(
         'The value/defaultValue of TimePicker must be a moment object after `antd@2.0`, ' +
-        'see: http://u.ant.design/time-picker-value',
+        'see: https://u.ant.design/time-picker-value',
       );
     }
     this.state = {
@@ -58,7 +71,7 @@ abstract class TimePicker extends React.Component<TimePickerProps, any> {
     };
   }
 
-  abstract getLocale()
+  abstract getLocale();
 
   componentWillReceiveProps(nextProps: TimePickerProps) {
     if ('value' in nextProps) {
@@ -102,7 +115,9 @@ abstract class TimePicker extends React.Component<TimePickerProps, any> {
   }
 
   render() {
-    const props = assign({}, this.props);
+    const props = {
+      ...this.props,
+    };
     delete props.defaultValue;
 
     const format = this.getDefaultFormat();
@@ -120,9 +135,7 @@ abstract class TimePicker extends React.Component<TimePickerProps, any> {
 
     return (
       <RcTimePicker
-        showHour={format.indexOf('HH') > -1 || format.indexOf('h') > -1}
-        showMinute={format.indexOf('mm') > -1}
-        showSecond={format.indexOf('ss') > -1}
+        {...generateShowHourMinuteSecond(format)}
         {...props}
         ref={this.saveTimePicker}
         format={format}

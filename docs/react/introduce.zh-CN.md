@@ -13,7 +13,7 @@ title: Ant Design of React
 
 <style>
 .pic-plus > * {
-  display: inline-block!important;
+  display: inline-block !important;
   vertical-align: middle;
 }
 .pic-plus span {
@@ -34,14 +34,14 @@ title: Ant Design of React
 
 ## 支持环境
 
-* 现代浏览器和 IE9 及以上。
+* 现代浏览器和 IE9 及以上（需要 [polyfills](https://ant.design/docs/react/getting-started-cn#兼容性)）。
 * 支持服务端渲染。
 * [Electron](http://electron.atom.io/)
 
 ## 版本
 
 - 稳定版：[![npm package](https://img.shields.io/npm/v/antd.svg?style=flat-square)](https://www.npmjs.org/package/antd)
-- 开发版：[![](https://cnpmjs.org/badge/v/antd.svg?&tag=beta&subject=npm)](https://www.npmjs.org/package/antd)
+- 预览版：[![](https://cnpmjs.org/badge/v/antd.svg?&tag=next&subject=npm)](https://www.npmjs.org/package/antd)
 
 你可以订阅：https://github.com/ant-design/ant-design/releases.atom 来获得稳定版发布的通知。
 
@@ -163,7 +163,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 
 在任何形式的参与前，请先阅读 [贡献者文档](https://github.com/ant-design/ant-design/blob/master/.github/CONTRIBUTING.md)。如果你希望参与贡献，欢迎 [Pull Request](https://github.com/ant-design/ant-design/pulls)，或给我们 [报告 Bug](http://new-issue.ant.design/)。
 
-> 强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)，更好的问题更容易获得帮助。
+> 强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
 
 ## 社区互助
 
@@ -171,7 +171,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 
 通过 Stack Overflow 或者 Segment Fault 提问时，建议加上 `antd` 标签。
 
-1. [Stack Overflow](http://stackoverflow.com/questions/tagged/antd)（英文）
-2. [Segment Fault](https://segmentfault.com/t/antd)（中文）
+1. [<img alt="Stack Overflow" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.svg?v=2bb144720a66" width="140" />](http://stackoverflow.com/questions/tagged/antd)（English）
+2. [<img alt="Segment Fault" src="http://static.segmentfault.com/global/img/logo.svg" width="100" />](https://segmentfault.com/t/antd)（中文）
 3. [![Gitter](https://badges.gitter.im/ant-design/ant-design-english.svg)](https://gitter.im/ant-design/ant-design-english?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) (English)
 4. [![Join the chat at https://gitter.im/ant-design/ant-design](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ant-design/ant-design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)（中文）

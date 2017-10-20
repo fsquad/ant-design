@@ -63,10 +63,10 @@ class CompactDemo extends React.Component {
     return (
       <div>
         <InputGroup size="large">
-          <Col span="4">
+          <Col span={4}>
             <Input defaultValue="0571" />
           </Col>
-          <Col span="8">
+          <Col span={8}>
             <Input defaultValue="26888888" />
           </Col>
         </InputGroup>
@@ -115,7 +115,7 @@ class CompactDemo extends React.Component {
             <Option value="2">Except</Option>
           </Select>
           <Input style={{ width: 100, textAlign: 'center' }} placeholder="Minimum" />
-          <Input style={{ width: 24, borderLeft: 0, pointerEvents: 'none' }} placeholder="~" />
+          <Input style={{ width: 24, borderLeft: 0, pointerEvents: 'none', backgroundColor: '#fff' }} placeholder="~" disabled />
           <Input style={{ width: 100, textAlign: 'center', borderLeft: 0 }} placeholder="Maximum" />
         </InputGroup>
         <br />

@@ -13,7 +13,7 @@ export interface BreadcrumbProps {
   itemRender?: (route: any, params: any, routes: Array<any>, paths: Array<string>) => React.ReactNode;
   style?: React.CSSProperties;
   className?: string;
-};
+}
 
 function getBreadcrumbName(route, params) {
   if (!route.breadcrumbName) {
@@ -57,7 +57,7 @@ export default class Breadcrumb extends React.Component<BreadcrumbProps, any> {
     warning(
       !('linkRender' in props || 'nameRender' in props),
       '`linkRender` and `nameRender` are removed, please use `itemRender` instead, ' +
-      'see: http://u.ant.design/item-render.',
+      'see: https://u.ant.design/item-render.',
     );
   }
 

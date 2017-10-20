@@ -6,129 +6,141 @@ exports[`renders ./components/input/demo/addon.md correctly 1`] = `
     style="margin-bottom:16px;"
   >
     <span
-      class="ant-input-wrapper ant-input-group"
+      class="ant-input-group-wrapper"
     >
       <span
-        class="ant-input-group-addon"
+        class="ant-input-wrapper ant-input-group"
       >
-        Http://
-      </span>
-      <input
-        class="ant-input"
-        type="text"
-        value="mysite"
-      />
-      <span
-        class="ant-input-group-addon"
-      >
-        .com
-      </span>
-    </span>
-  </div>
-  <div
-    style="margin-bottom:16px;"
-  >
-    <span
-      class="ant-input-wrapper ant-input-group"
-    >
-      <span
-        class="ant-input-group-addon"
-      >
-        <div
-          class="ant-select ant-select-enabled"
-          style="width:80px;"
+        <span
+          class="ant-input-group-addon"
         >
-          <div
-            aria-autocomplete="list"
-            aria-expanded="false"
-            aria-haspopup="true"
-            class="ant-select-selection
-                      ant-select-selection--single"
-            role="combobox"
-            tabindex="0"
-          >
-            <div
-              class="ant-select-selection__rendered"
-            >
-              <div
-                class="ant-select-selection-selected-value"
-                style="display:block;opacity:1;"
-                title="Http://"
-              >
-                Http://
-              </div>
-            </div>
-            <span
-              class="ant-select-arrow"
-              style="user-select:none;-webkit-user-select:none;"
-              unselectable="unselectable"
-            >
-              <b />
-            </span>
-          </div>
-        </div>
-      </span>
-      <input
-        class="ant-input"
-        type="text"
-        value="mysite"
-      />
-      <span
-        class="ant-input-group-addon"
-      >
-        <div
-          class="ant-select ant-select-enabled"
-          style="width:70px;"
-        >
-          <div
-            aria-autocomplete="list"
-            aria-expanded="false"
-            aria-haspopup="true"
-            class="ant-select-selection
-                      ant-select-selection--single"
-            role="combobox"
-            tabindex="0"
-          >
-            <div
-              class="ant-select-selection__rendered"
-            >
-              <div
-                class="ant-select-selection-selected-value"
-                style="display:block;opacity:1;"
-                title=".com"
-              >
-                .com
-              </div>
-            </div>
-            <span
-              class="ant-select-arrow"
-              style="user-select:none;-webkit-user-select:none;"
-              unselectable="unselectable"
-            >
-              <b />
-            </span>
-          </div>
-        </div>
-      </span>
-    </span>
-  </div>
-  <div
-    style="margin-bottom:16px;"
-  >
-    <span
-      class="ant-input-wrapper ant-input-group"
-    >
-      <input
-        class="ant-input"
-        type="text"
-        value="mysite"
-      />
-      <span
-        class="ant-input-group-addon"
-      >
-        <i
-          class="anticon anticon-setting"
+          Http://
+        </span>
+        <input
+          class="ant-input"
+          type="text"
+          value="mysite"
         />
+        <span
+          class="ant-input-group-addon"
+        >
+          .com
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    style="margin-bottom:16px;"
+  >
+    <span
+      class="ant-input-group-wrapper"
+    >
+      <span
+        class="ant-input-wrapper ant-input-group"
+      >
+        <span
+          class="ant-input-group-addon"
+        >
+          <div
+            class="ant-select ant-select-enabled"
+            style="width:80px;"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="ant-select-selection
+                        ant-select-selection--single"
+              role="combobox"
+              tabindex="0"
+            >
+              <div
+                class="ant-select-selection__rendered"
+              >
+                <div
+                  class="ant-select-selection-selected-value"
+                  style="display:block;opacity:1;"
+                  title="Http://"
+                >
+                  Http://
+                </div>
+              </div>
+              <span
+                class="ant-select-arrow"
+                style="user-select:none;-webkit-user-select:none;"
+                unselectable="unselectable"
+              >
+                <b />
+              </span>
+            </div>
+          </div>
+        </span>
+        <input
+          class="ant-input"
+          type="text"
+          value="mysite"
+        />
+        <span
+          class="ant-input-group-addon"
+        >
+          <div
+            class="ant-select ant-select-enabled"
+            style="width:70px;"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="ant-select-selection
+                        ant-select-selection--single"
+              role="combobox"
+              tabindex="0"
+            >
+              <div
+                class="ant-select-selection__rendered"
+              >
+                <div
+                  class="ant-select-selection-selected-value"
+                  style="display:block;opacity:1;"
+                  title=".com"
+                >
+                  .com
+                </div>
+              </div>
+              <span
+                class="ant-select-arrow"
+                style="user-select:none;-webkit-user-select:none;"
+                unselectable="unselectable"
+              >
+                <b />
+              </span>
+            </div>
+          </div>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div
+    style="margin-bottom:16px;"
+  >
+    <span
+      class="ant-input-group-wrapper"
+    >
+      <span
+        class="ant-input-wrapper ant-input-group"
+      >
+        <input
+          class="ant-input"
+          type="text"
+          value="mysite"
+        />
+        <span
+          class="ant-input-group-addon"
+        >
+          <i
+            class="anticon anticon-setting"
+          />
+        </span>
       </span>
     </span>
   </div>
@@ -140,7 +152,6 @@ exports[`renders ./components/input/demo/autosize-textarea.md correctly 1`] = `
   <textarea
     class="ant-input"
     placeholder="Autosize height based on content lines"
-    type="textarea"
   />
   <div
     style="margin:24px 0;"
@@ -148,7 +159,6 @@ exports[`renders ./components/input/demo/autosize-textarea.md correctly 1`] = `
   <textarea
     class="ant-input"
     placeholder="Autosize height with minimum and maximum number of lines"
-    type="textarea"
   />
 </div>
 `;
@@ -319,16 +329,17 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
         </span>
       </div>
       <div
-        aria-valuemax="Infinity"
-        aria-valuemin="-Infinity"
+        aria-valuemax="9007199254740991"
+        aria-valuemin="-9007199254740991"
         class="ant-input-number-input-wrap"
         role="spinbutton"
       >
         <input
           autocomplete="off"
           class="ant-input-number-input"
-          max="Infinity"
-          min="-Infinity"
+          max="9007199254740991"
+          min="-9007199254740991"
+          step="1"
           value=""
         />
       </div>
@@ -347,7 +358,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
     <span
       class="ant-calendar-picker"
     >
-      <span>
+      <div>
         <input
           class="ant-calendar-picker-input ant-input"
           placeholder="请选择日期"
@@ -357,7 +368,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
         <span
           class="ant-calendar-picker-icon"
         />
-      </span>
+      </div>
     </span>
   </span>
   <br />
@@ -472,9 +483,10 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
       type="text"
     />
     <input
-      class="ant-input"
+      class="ant-input ant-input-disabled"
+      disabled=""
       placeholder="~"
-      style="width:24px;border-left:0;pointer-events:none;"
+      style="width:24px;border-left:0;pointer-events:none;background-color:#fff;"
       type="text"
     />
     <input
@@ -550,7 +562,7 @@ exports[`renders ./components/input/demo/group.md correctly 1`] = `
                 class="ant-select-search__field__wrap"
               >
                 <input
-                  class="ant-input ant-input ant-select-search__field"
+                  class="ant-input ant-select-search__field"
                   type="text"
                   value=""
                 />
@@ -656,11 +668,11 @@ exports[`renders ./components/input/demo/presuffix.md correctly 1`] = `
 
 exports[`renders ./components/input/demo/search-input.md correctly 1`] = `
 <span
-  class="ant-input-affix-wrapper"
+  class="ant-input-search ant-input-affix-wrapper"
   style="width:200px;"
 >
   <input
-    class="ant-input ant-input-search"
+    class="ant-input"
     placeholder="input search text"
     type="text"
   />
@@ -700,7 +712,6 @@ exports[`renders ./components/input/demo/textarea.md correctly 1`] = `
 <textarea
   class="ant-input"
   rows="4"
-  type="textarea"
 />
 `;
 

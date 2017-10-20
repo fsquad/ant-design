@@ -5,7 +5,7 @@ import Select, { AbstractSelectProps, SelectValue, OptionProps, OptGroupProps } 
 import Input from '../input';
 import InputElement from './InputElement';
 
-export interface DataSourceItemObject { value: string; text: string; };
+export interface DataSourceItemObject { value: string; text: string; }
 export type DataSourceItemType = string | DataSourceItemObject;
 
 export interface InputProps {
@@ -50,15 +50,9 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, any
   getInputElement = () => {
     const { children } = this.props;
     const element = children && React.isValidElement(children) && children.type !== Option ?
-      React.Children.only(this.props.children) :
-      <Input/>;
+      React.Children.only(this.props.children) : <Input />;
     return (
-      <InputElement
-        {...element.props}
-        className={classNames('ant-input', element.props.className)}
-      >
-        {element}
-      </InputElement>
+      <InputElement {...element.props}>{element}</InputElement>
     );
   }
 

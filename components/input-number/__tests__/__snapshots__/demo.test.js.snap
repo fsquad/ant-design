@@ -44,6 +44,7 @@ exports[`renders ./components/input-number/demo/basic.md correctly 1`] = `
       class="ant-input-number-input"
       max="10"
       min="1"
+      step="1"
       value="3"
     />
   </div>
@@ -93,6 +94,7 @@ exports[`renders ./components/input-number/demo/digit.md correctly 1`] = `
       class="ant-input-number-input"
       max="10"
       min="0"
+      step="0.1"
       value=""
     />
   </div>
@@ -145,6 +147,7 @@ exports[`renders ./components/input-number/demo/disabled.md correctly 1`] = `
         disabled=""
         max="10"
         min="1"
+        step="1"
         value="3"
       />
     </div>
@@ -198,8 +201,8 @@ exports[`renders ./components/input-number/demo/formatter.md correctly 1`] = `
       </span>
     </div>
     <div
-      aria-valuemax="Infinity"
-      aria-valuemin="-Infinity"
+      aria-valuemax="9007199254740991"
+      aria-valuemin="-9007199254740991"
       aria-valuenow="1000"
       class="ant-input-number-input-wrap"
       role="spinbutton"
@@ -207,8 +210,9 @@ exports[`renders ./components/input-number/demo/formatter.md correctly 1`] = `
       <input
         autocomplete="off"
         class="ant-input-number-input"
-        max="Infinity"
-        min="-Infinity"
+        max="9007199254740991"
+        min="-9007199254740991"
+        step="1"
         value="$ 1,000"
       />
     </div>
@@ -256,6 +260,7 @@ exports[`renders ./components/input-number/demo/formatter.md correctly 1`] = `
         class="ant-input-number-input"
         max="100"
         min="0"
+        step="1"
         value="100%"
       />
     </div>
@@ -308,6 +313,7 @@ exports[`renders ./components/input-number/demo/size.md correctly 1`] = `
         class="ant-input-number-input"
         max="100000"
         min="1"
+        step="1"
         value="3"
       />
     </div>
@@ -355,6 +361,7 @@ exports[`renders ./components/input-number/demo/size.md correctly 1`] = `
         class="ant-input-number-input"
         max="100000"
         min="1"
+        step="1"
         value="3"
       />
     </div>
@@ -402,6 +409,7 @@ exports[`renders ./components/input-number/demo/size.md correctly 1`] = `
         class="ant-input-number-input"
         max="100000"
         min="1"
+        step="1"
         value="3"
       />
     </div>
