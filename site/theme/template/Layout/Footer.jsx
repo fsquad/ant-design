@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import { Modal, Icon, message } from 'antd';
+import { Link } from 'bisheng/router';
 import { isLocalStorageNameSupported, loadScript } from '../utils';
 import ColorPicker from '../Color/ColorPicker';
 
@@ -94,6 +95,9 @@ class Footer extends React.Component {
               </a>
             </div>
             <div>
+              <a href="http://pro.ant.design">Ant Design Pro</a>
+            </div>
+            <div>
               <a href="http://mobile.ant.design">Ant Design Mobile</a>
             </div>
             <div>
@@ -104,6 +108,11 @@ class Footer extends React.Component {
             <div>
               <a target="_blank " href="https://github.com/websemantics/awesome-ant-design">
                 <FormattedMessage id="app.footer.awesome" />
+              </a>
+            </div>
+            <div>
+              <a target="_blank " href="http://ant-design.gitee.io/">
+                <FormattedMessage id="app.footer.chinamirror" />
               </a>
             </div>
             <div style={{ marginTop: 12 }}>
@@ -165,11 +174,6 @@ class Footer extends React.Component {
               <span> - </span>
               <FormattedMessage id="app.footer.antux" />
             </div>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="http://enclose.io/">Enclose.IO</a>
-              <span> - </span>
-              <FormattedMessage id="app.footer.encloseio" />
-            </div>
           </li>
           <li>
             <h2><Icon type="customer-service" /> <FormattedMessage id="app.footer.community" /></h2>
@@ -218,6 +222,10 @@ class Footer extends React.Component {
             <h2>Copyright © {new Date().getFullYear()}</h2>
             <div>
               <FormattedMessage id="app.footer.author" />
+              &nbsp;
+              <Link to="/docs/resource/work-with-us">
+                <FormattedMessage id="app.footer.work_with_us" />
+              </Link>
             </div>
             <div>
               Built with&nbsp;

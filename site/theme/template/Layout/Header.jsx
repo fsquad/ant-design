@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
 import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
-import { Select, Menu, Row, Col, Icon, Button, Popover, AutoComplete, Input } from 'antd';
+import { Select, Menu, Row, Col, Icon, Button, Popover, AutoComplete, Input, Badge } from 'antd';
 import * as utils from '../utils';
 import { version as antdVersion } from '../../../../package.json';
 
@@ -155,7 +155,7 @@ export default class Header extends React.Component {
     });
 
     const menu = [
-      <Button className="lang" type="ghost" size="small" onClick={this.handleLangChange} key="lang">
+      <Button className="header-lang-button" ghost size="small" onClick={this.handleLangChange} key="lang">
         <FormattedMessage id="app.header.lang" />
       </Button>,
       <Select
@@ -195,9 +195,17 @@ export default class Header extends React.Component {
             <FormattedMessage id="app.header.menu.resource" />
           </Link>
         </Menu.Item>
-        <Menu.Item key="mobile">
-          <a href="//mobile.ant.design">
-            <FormattedMessage id="app.header.menu.mobile" />
+        <Menu.Item key="pro">
+          <a
+            href="http://pro.ant.design"
+            className="header-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FormattedMessage id="app.header.menu.pro" />
+            <span style={{ display: 'inline-block', position: 'relative', top: -2, width: 18 }}>
+              <Badge dot />
+            </span>
           </a>
         </Menu.Item>
       </Menu>,

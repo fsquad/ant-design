@@ -72,7 +72,7 @@ import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
    // .babelrc or babel-loader option
    {
      "plugins": [
-       ["import", { libraryName: "antd", style: "css" }] // `style: true` for less
+       ["import", { "libraryName": "antd", "style": "css" }] // `style: true` for less
      ]
    }
    ```
@@ -121,10 +121,9 @@ See [i18n](http://ant.design/docs/react/i18n).
 ## Links
 
 - [Home page](http://ant.design/)
-- [UI library](http://ant.design/docs/react/introduce)
+- [Components](http://ant.design/docs/react/introduce)
+- [Ant Design Pro](http://pro.ant.design/)
 - [Change Log](CHANGELOG.en-US.md)
-- [Official Scaffold Tool](https://github.com/dvajs/dva-cli/)
-- [Development Tool](http://ant-tool.github.io/)
 - [Scaffold Market](http://scaffold.ant.design)
 - [rc-components](http://react-component.github.io/)
 - [Mobile UI](http://mobile.ant.design)

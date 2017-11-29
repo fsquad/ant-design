@@ -17,6 +17,54 @@ If you want to read change logs before `2.0.0`, please visit [GitHub](https://gi
 
 ---
 
+## 2.13.10
+
+`2017-11-12`
+
+- 📝 Add documentation of [Work with Us](http://ant.design/docs/resource/work-with-us).
+- 📝 Refactor edit row demo of Table. [#8026](https://github.com/ant-design/ant-design/issues/8026)
+- 🌟 Improve detection of Layout.Sider, now we can compose and nest the Sider without specifying `__ANT_LAYOUT_SIDER` attribute. [#8077](https://github.com/ant-design/ant-design/pull/8077/) [@yasinuslu](https://github.com/yasinuslu)
+- 🐞 Fix align issue of `Input.Group` in Chrome 62. [ant-design/ant-design-pro#139](https://github.com/ant-design/ant-design-pro/issues/139)
+- 🐞 Fix Cascader search not working when option.children is `[]`. [#8130](https://github.com/ant-design/ant-design/issues/8130) [@jdz321](https://github.com/jdz321)
+- 🐞 Fix broken padding of AutoComponent caused by style order conflict with Input. [#8081](https://github.com/ant-design/ant-design/issues/8081)
+- 🐞 Fix Upload constructor error in IE9. [#7706](https://github.com/ant-design/ant-design/issues/7706)
+- 🐞 Fix Select filterOption's TypeScript definition. [#8128](https://github.com/ant-design/ant-design/issues/8128)
+
+## 2.13.9
+
+`2017-11-06`
+
+- 🌟 Published [Ant Design Pro](https://pro.ant.design/).
+- 🐞 Fix that `Cascader[popupVisible]` doesn't work. [#8088](https://github.com/ant-design/ant-design/issues/8088)
+- 🐞 Fix that native `input[type=checkbox|radio]` invisible issue. [7c3a483](https://github.com/ant-design/ant-design/commit/7c3a48319074a800c89935e728904933d503ee86)
+- 🐞 Fix that `Input.Search[suffix]` doesn't work. [#7970](https://github.com/ant-design/ant-design/issues/7970)
+- 🐞 Fix TypeScript definitions of Slider. [#8102](https://github.com/ant-design/ant-design/pull/8102) [@davschne](https://github.com/davschne)
+
+## 2.13.8
+
+`2017-10-27`
+
+- 🌟 Add a mirror site in China: [http://ant-design.gitee.io](http://ant-design.gitee.io)
+- 🐞 Fix `ref warning` of Menu in React 16. [#8037](https://github.com/ant-design/ant-design/pull/8037) [@vgeyi](https://github.com/vgeyi)
+- 🐞 Fix extra padding of loading Card when it is too wide. [ad9809ec](https://github.com/ant-design/ant-design/commit/ad9809ec2e29275c9348537b04584dcfdc96659a)
+- 📝 Add sorted API to enhance readability of docs. [#7896](https://github.com/ant-design/ant-design/pull/7896)[@monkindey](https://github.com/monkindey)
+- 📝 Improve Modal docs of how to setting styles. [#7840](https://github.com/ant-design/ant-design/issues/7840) [@kossel](https://github.com/kossel)
+- 🐞 Fix the inner shadow of Input on IOS. [#7974](https://github.com/ant-design/ant-design/pull/7974) [@cnahliu](https://github.com/cnahliu)
+
+## 2.13.7
+
+`2017-10-22`
+
+- 🐞 Fix input height in AutoComplete. [#7918](https://github.com/ant-design/ant-design/issues/7918)
+- 🐞 Fix Cascader `inputPrefixCls` can not be fully effective. [#7945](https://github.com/ant-design/ant-design/pull/7945) [@vgeyi](https://github.com/vgeyi)
+- 🐞 Fix extra margin in sider Layout. [#7967](https://github.com/ant-design/ant-design/issues/7967)
+- 🐞 Fix RangePicker can not close panel when click presetted ranges. [#7747](https://github.com/ant-design/ant-design/issues/7747)
+- Table
+  - 🐞 Fix Radio can not be centered in Table column. [#7969](https://github.com/ant-design/ant-design/issues/7969)
+  - 🐞 Fix Table filter can't show after remove fixed setting. [#7909](https://github.com/ant-design/ant-design/issues/7909)
+- 🌟 Add `scrollNumberPrefixCls` prop for Badge. [#7882](https://github.com/ant-design/ant-design/pull/7882) [@vgeyi](https://github.com/vgeyi)
+- 🌟 Add some less variables. [#7886](https://github.com/ant-design/ant-design/issues/7886) [@syssam](https://github.com/syssam)
+
 ## 2.13.6
 
 `2017-10-12`
@@ -1324,8 +1372,8 @@ The following change will throw some warnings in the console and it will still w
 
   ```diff
   {
-  -  "plugins": [["antd", { style: "css" }]]
-  +  "plugins": [["import", { libraryName: "antd", style: "css" }]]
+  -  "plugins": [["antd", { "style": "css" }]]
+  +  "plugins": [["import", { "libraryName": "antd", "style": "css" }]]
   }
   ```
 

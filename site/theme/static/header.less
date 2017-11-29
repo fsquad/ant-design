@@ -18,6 +18,14 @@
       color: @text-color;
     }
   }
+
+  .header-link {
+    color: @text-color;
+  }
+
+  .ant-menu-item-active .header-link {
+    color: @primary-color;
+  }
 }
 
 #logo {
@@ -67,15 +75,19 @@
   box-shadow: none;
 }
 
-.lang,
+.header-lang-button,
 .version {
   float: right;
   margin-top: 29px;
   margin-left: 10px;
 }
 
+.header-lang-button {
+  color: @text-color;
+  border-color: @border-color-base;
+}
+
 .version {
-  width: 66px;
   margin-left: 16px;
 }
 
